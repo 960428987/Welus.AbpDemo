@@ -1,0 +1,10 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/.vs/Welus.AbpDemo/v16/.suo
+/ConsoleApp1/obj
+/Welus.Abp.Demo.Console/obj
+/Welus.Abp.Demo.Console/bin/Debug/net5.0
+/Welus.AbpDemo.ConsoleApp.Common/obj
+/Welus.AbpDemo.ConsoleApp.Common/bin/Debug/net5.0
