@@ -23,9 +23,10 @@ namespace Welus.AbpDemo.ConsoleApp
             })
            .ConfigureServices((hostContext, services) =>
            {
-               services.AddApplication<ConsoleModule>(options => {
+               services.AddApplication<ConsoleModule>(options =>
+               {
                    // 1、加载插件
-                  // options.PlugInSources.AddFolder(@"D:\work\net-project\ABP专题\1、核心根基模块化\MyPlugIns");
+                    options.PlugInSources.AddFolder(@"C:\Work\Learn\.Net5\Code\ABP\Code\Welus.AbpDemo\Welus.Abp.Demo.Console\Plugins");
                });
 
            });

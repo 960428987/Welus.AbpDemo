@@ -13,7 +13,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Welus.AbpDemo.Console.Plugin\Welus.AbpDemo.ConsoleApp.Plugin.csproj" />
     <ProjectReference Include="..\Welus.AbpDemo.ConsoleApp.Common\Welus.AbpDemo.ConsoleApp.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Plugins\" />
   </ItemGroup>
 
 </Project>

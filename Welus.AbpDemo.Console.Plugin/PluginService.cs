@@ -6,17 +6,14 @@ using System.Text;
 using System.Threading.Tasks;
 using Volo.Abp.DependencyInjection;
 
-namespace Welus.AbpDemo.ConsoleApp
+namespace Welus.AbpDemo.ConsoleApp.Plugin
 {
-    /// <summary>
-    /// 使用特性注入将HelloService自动注入到容器中
-    /// </summary>
     [Dependency(ServiceLifetime.Transient)]
-    public class HelloService /*: ITransientDependency*/
+   public class PluginService
     {
-        public void SayHello()
+        public void Plugin()
         {
-            Console.WriteLine("天天向上");
+            System.Console.WriteLine("插件服务");
         }
     }
 }

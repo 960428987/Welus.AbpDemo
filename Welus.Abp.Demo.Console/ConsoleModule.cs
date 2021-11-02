@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Volo.Abp.Autofac;
 using Volo.Abp.Modularity;
 using Welus.AbpDemo.ConsoleApp.Common;
+using Welus.AbpDemo.ConsoleApp.Plugin;
 
 namespace Welus.AbpDemo.ConsoleApp
 {
@@ -17,7 +18,9 @@ namespace Welus.AbpDemo.ConsoleApp
     从其派生的Module都可以直接获取并使用相关的功能
      */
 
-    [DependsOn(typeof(AbpAutofacModule),typeof(CommonModule))]
+    [DependsOn(typeof(AbpAutofacModule),
+        typeof(CommonModule)
+        )]
     public class ConsoleModule:AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)

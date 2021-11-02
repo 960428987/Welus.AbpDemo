@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Welus.AbpDemo.ConsoleApp.Common;
+using Welus.AbpDemo.ConsoleApp.Plugin;
 
 namespace Welus.AbpDemo.ConsoleApp
 {
@@ -13,6 +14,7 @@ namespace Welus.AbpDemo.ConsoleApp
     {
         private readonly HelloService _helloWorldService;//构造函数注入
         public CommonService commonService { set; get; }// 属性注入
+        public PluginService pluginService { get; set; }
         /// <summary>
         /// 构造函数
         /// </summary>
@@ -23,6 +25,7 @@ namespace Welus.AbpDemo.ConsoleApp
         }
         public Task StartAsync(CancellationToken cancellationToken)
         {
+            pluginService.Plugin();
             _helloWorldService.SayHello();
             commonService.Common();
             return Task.CompletedTask;
